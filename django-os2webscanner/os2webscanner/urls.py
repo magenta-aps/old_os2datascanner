@@ -48,7 +48,6 @@ js_info_dict = {
 }
 
 urlpatterns = [
-    # App URLs
     url(r'^$', MainPageView.as_view(), name='index'),
     url(r'^exchangescanners/$', ExchangeScannerList.as_view(), name='exchangescanners'),
     url(r'^exchangescanners/add/$', ExchangeScannerCreate.as_view(), name='exchangescanner_add'),
