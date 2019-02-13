@@ -77,6 +77,7 @@ INSTALLED_APPS = (
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
+    'debug_toolbar',
     'django.contrib.sites',
     'os2webscanner',
     'recurrence',
@@ -89,7 +90,9 @@ XMLRPC_METHODS = (
     ('os2webscanner.rpc.get_status', 'get_status'),
     ('os2webscanner.rpc.get_report', 'get_report'),
 )
+
 MIDDLEWARE_CLASSES = (
+    'debug_toolbar.middleware.DebugToolbarMiddleware',
     'django.contrib.sessions.middleware.SessionMiddleware',
     'django.middleware.common.CommonMiddleware',
     'django.middleware.csrf.CsrfViewMiddleware',
