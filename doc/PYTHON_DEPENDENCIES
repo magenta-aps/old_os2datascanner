@@ -43,3 +43,6 @@ xmltodict==0.11.0
 idna<2.7
 numpy==1.16.1
 matplotlib==3.0.2
+PyPDF2==1.26.0
+olefile==0.46
+defusedxml==0.5.0
